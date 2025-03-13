@@ -21,7 +21,7 @@ onMounted(() => {
   asyncGet(apis.show).then((resp: Array<Reservation>) => {
     reservations.value = resp
   })
-})s
+})
 </script>
 
 <style scoped lang="scss">
