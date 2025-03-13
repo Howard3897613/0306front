@@ -18,7 +18,7 @@ import { apis } from './enum/api';
 const reservations = ref<Array<Reservation>>([])
 
 onMounted(() => {
-  asyncGet(apis.test).then((resp: Array<Reservation>) => {
+  asyncGet(apis.show).then((resp: Array<Reservation>) => {
     reservations.value = resp
   })
 })
